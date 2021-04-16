@@ -42,7 +42,6 @@ class Fingers(context: Context) : View(context),ScaleGestureDetector.OnScaleGest
         var SrcRect:Rect = Rect(0, 0, bitmap.width, bitmap.height) //裁切(顯示全部)
         var w:Int = (bitmap.width*factor/4).toInt()
         var h:Int = (bitmap.height*factor/4).toInt()
-
         var DestRect:Rect = Rect(200, 300,
             bitmap.width/4+200, bitmap.height/4+300) //原圖較大，縮成1/4顯示
         canvas.drawBitmap(bitmap, SrcRect, DestRect, paint)
